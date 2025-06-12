@@ -526,7 +526,7 @@ Here are the keybinding's which I took from ~distro tube~ eamcs config. I use pa
 #+end_src
 
 ** SUDO EDIT
-Sometime we have to edit something with sudo but eamcs do not have any sudo support, So we need to add this so that we can edit files which need sudo privilage.
+Sometime we have to edit something with sudo but eamcs do not have any sudo support by default, So we need to add this so that we can edit files which need sudo privilage.
 #+begin_src emacs-lisp
 (use-package sudo-edit
   :ensure t
@@ -603,6 +603,8 @@ Those are my personal keybindings with Meta/Alt as a leader key.
 #+end_src
 
 ** WHICH KEY
+
+For keybind suggestions.
 #+begin_src emacs-lisp
 (use-package which-key
 :ensure t
@@ -624,6 +626,7 @@ Those are my personal keybindings with Meta/Alt as a leader key.
 #+end_src
 
 ** BLANK BUFFER
+This is my personal setup. It is a blank buffer which have 100% transparency, so we can see our wallpaper through it.
 #+begin_src emacs-lisp
 (defun my/blank-buffer ()
   "Create a new completely blank buffer with no UI elements."
@@ -647,6 +650,7 @@ Those are my personal keybindings with Meta/Alt as a leader key.
 #+end_src
 
 ** TRANSPERENCY
+Transparency and effect with picom.
 #+begin_src emacs-lisp
 (start-process "picom" nil "picom")
 (defun my/update-transparency-based-on-buffer ()
